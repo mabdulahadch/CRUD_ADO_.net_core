@@ -1,0 +1,67 @@
+﻿@model CRUDwithADO.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+</head>
+<body>
+
+    <h1>Details of student</h1>
+
+    <div>
+        <h4>Student</h4>
+        <hr />
+
+        <dl>
+            <dt>
+                Name:
+            </dt>
+            <dd>
+                @Model.Name
+            </dd>
+
+            <dt>
+                Age:
+            </dt>
+            <dd>
+                @Model.Age
+            </dd>
+
+            <dt>
+                Address:
+            </dt>
+            <dd>
+                @Model.Address
+            </dd>
+
+            <dt>
+                Gender:
+            </dt>
+            <dd>
+                @Model.Gender
+            </dd>
+
+            <dt>
+                Status:
+            </dt>
+            <dd>
+                @Model.Status
+            </dd>
+
+            <dt>
+                Education:
+            </dt>
+            <dd>
+                @Model.Education
+            </dd>
+        </dl>
+		<a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>

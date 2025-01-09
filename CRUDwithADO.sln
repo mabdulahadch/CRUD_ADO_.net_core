@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDwithADO", "CRUDwithADO.csproj", "{AC8E9B42-5729-4A33-A8E7-D6FBAE93D169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC8E9B42-5729-4A33-A8E7-D6FBAE93D169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8E9B42-5729-4A33-A8E7-D6FBAE93D169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8E9B42-5729-4A33-A8E7-D6FBAE93D169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8E9B42-5729-4A33-A8E7-D6FBAE93D169}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB619D44-DCB1-44BF-91D6-59FB197C0451}
+	EndGlobalSection
+EndGlobal

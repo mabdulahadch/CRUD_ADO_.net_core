@@ -1,0 +1,46 @@
+﻿@model CRUDwithADO.Models.Student
+
+@{
+    ViewData["Title"] = "Insert";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Insert the student data</h1>
+
+    <form asp-action="Insert" method="post">
+
+		<label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="Name" value=""><br>
+
+		<label for="Age">Age:</label><br>
+        <input type="number" id="Age" name="Age" value=""><br>
+
+		<label for="Address">Address:</label><br>
+        <input type="text" id="Address" name="Address" value=""><br>
+
+        <label for="Gender">Gender:</label><br>
+        <input type="radio" id="Gender" name="Gender" value="Male">
+        <label for="Gender">Male</label><br>
+        <input type="radio" id="Gender" name="Gender" value="Female">
+        <label for="Gender">Female</label><br>
+
+		<label for="Status">Status:</label>
+		<input type="checkbox" id="Status" name="Status" value="Status"><br>
+
+        <label for="Education">Education:</label>
+        <select name="Education" id="Education">
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Masters's">Masters's</option>
+            <option value="PhD">PhD</option>
+        </select><br>
+
+        <input type="submit" value="Submit"> | 
+        <a asp-action="Index">Back to List</a>
+
+    </form>
+
+</body>
+</html>

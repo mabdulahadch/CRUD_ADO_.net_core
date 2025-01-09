@@ -1,0 +1,32 @@
+﻿@model CRUDwithADO.Models.Student
+
+@{
+    ViewData["Title"] = "Update Student";
+}
+
+<h2>Update Student</h2>
+
+<form asp-action="Update" method="post">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name" value="@Model.Name" required /><br>
+
+    <label for="Age">Age:</label><br>
+    <input type="text" id="Age" name="Age" value="@Model.Age" required /><br>
+
+    <label for="Address">Address:</label><br>
+    <input type="text" id="Address" name="Address" value="@Model.Address" required /><br>
+
+    <label for="Gender">Gender:</label><br>
+    <input type="radio" id="Male" name="Gender" value="Male" @(Model.Gender == "Male" ? "checked" : "") /> Male <br>
+    <input type="radio" id="Female" name="Gender" value="Female" @(Model.Gender == "Female" ? "checked" : "") /> Female <br>
+
+    <label for="Status">Status:</label>
+    <input type="checkbox" id="Status" name="Status" value="true" @(Model.Status ? "checked" : "") /><br>
+
+    <label for="Education">Education:</label>
+    @Html.DropDownListFor(model => model.Education, new SelectList(new[] { "Bachelor's", "Master's", "PhD" }, Model.Education))<br>
+    <input type="submit" value="Update"> |  <a asp-action="Index">Back to List</a>
+</form>
+
